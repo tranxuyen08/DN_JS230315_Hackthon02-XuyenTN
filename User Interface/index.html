@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styel.css">
+  <title>User Interface</title>
+</head>
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="header">
+        <div class="transcript">
+          <p class="player"></p>
+          <p class="point"></p>
+        </div>
+        <div class="rikkei">
+          <h1>Rikkei Scoreboard</h1>
+        </div>
+        <div class="stop-watch">
+          <p class="content-watch">StopWatch</p>
+          <p class="content-number">0</p>
+          <div class="action">
+            <button onclick="handleTime()" class="btn btn-start">Start</button>
+            <button class="btn btn-reset">Reset</button>
+          </div>
+        </div>
+      </div>
+      <ul class="list-content">
+
+      </ul>
+      <div class="footer">
+        <input class="input-player" type="text" name="" id="" value="" placeholder="Enter a player's name">
+        <input onclick="handleAdd()" class="btn btn-add" type="submit" value="ADD PLAYER">
+      </div>
+    </div>
+  </section>
+  <script src="index.js"></script>
+</body>
+</html>
