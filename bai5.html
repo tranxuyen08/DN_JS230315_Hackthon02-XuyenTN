@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    width: 1440px;
+  }
+  .container{
+    width: 600px;
+    margin: 0 auto;
+  }
+  table{
+    width: 100%;
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+  td{
+    border: 1px solid;
+    padding: 10px;
+  }
+  th{
+    border: 1px solid;
+    padding: 10px;
+    background-color: antiquewhite;
+  }
+  .action{
+    display: flex;
+    justify-content: space-around;
+  }
+  .btn{
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-delete{
+    background-color: #eb4d4d;
+  }
+  .btn-edit{
+    background-color: #5050f0;
+  }
+  .btn-create{
+    background-color: #f3f347;
+    margin-bottom: 20px;
+  }
+  .input-create{
+    margin-bottom: 20px;
+  }
+  .input{
+    width: 200px;
+    padding: 10px;
+  }
+  .btn-update{
+    background-color: #5050f0;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <button onclick="handleCreate()" class="btn btn-create">Create</button>
+    <div class="input-create">
+    </div>
+    <table>
+      <tbody>
+        <tr>
+          <th>No</th>
+          <th>Full Name</th>
+          <th>Action</th>
+        </tr>
+      </tbody>
+      <tbody class="render-tbody">
+      </tbody>
+    </table>
+  </div>
+  <script src="bai5.js"></script>
+</body>
+
+</html>
